@@ -1,44 +1,54 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f6fa;
+  background: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0;
+  padding: 20px;
 }
 
 .container {
-  background: white;
-  padding: 40px;
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 h1 {
+  font-size: 6vw;
   margin-bottom: 20px;
   color: #333;
 }
 
 input {
-  padding: 10px;
-  font-size: 16px;
-  width: 80%;
+  width: 100%;
+  padding: 14px;
+  font-size: 4vw;
   margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 button {
-  padding: 12px 30px;
-  font-size: 18px;
-  color: white;
+  width: 100%;
+  padding: 16px;
+  font-size: 5vw;
+  color: #fff;
   background-color: #007BFF;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
@@ -47,6 +57,13 @@ button:hover {
 
 #status {
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 3.8vw;
   color: #555;
+}
+
+/* For larger screens */
+@media (min-width: 600px) {
+  h1 { font-size: 28px; }
+  input, button { font-size: 18px; }
+  #status { font-size: 14px; }
 }
